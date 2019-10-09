@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Belajar bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .main-content .col-4 {
+            background-color: gainsboro;
+        }
+
+        .main-content .media {
+            border-bottom: 1px solid black;
+            padding: 15px;
+        }
+
+        .main-content .media img {
+            width: 150px;
+            margin-right: 15px;
+        }
+
+        .jumbotron {
+            background-color: black;
+            height: 150px;
+
+        }
+
+        .jumbotron h1 {
+            color: white;
+            margin: 16px;
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        .nav {
+            background-color: grey;
+            font-size: 15px;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+
+        .sidebar ul li {
+            background-color: transparent;
+            border: none;
+        }
+
+        .sidebar ul li a {
+            color: orange;
+        }
+
+        .sidebar h5 {
+            border-bottom: 1px solid black;
+        }
+
+        .sidebar-widget {
+            border-bottom: 1px solid black;
+        }
+
+        .footer{
+            background-color: black;
+        }
+
+        .footer p {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">HTML <span>5</span></h1>
+
+        </div>
+        <!-- <div class="container nav"> -->
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+        <!-- </div> -->
+        <div class=" main-content container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <div class="media">
+                        <img src="20171212154814_1.jpg" class="align-self-center" alt="Error Gan">
+                        <div class="media-body">
+                            <h5 class="mt-0">Media heading</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus.<br>
+
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <img src="20171212154814_1.jpg" class="align-self-center" alt="Error Gan">
+                        <div class="media-body">
+                            <h5 class="mt-0">Media heading</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus.<br>
+
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <img src="20171212154814_1.jpg" class="align-self-center" alt="Error Gan">
+                        <div class="media-body">
+                            <h5 class="mt-0">Media heading</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus. <br>
+
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="sidebar">
+                        <h5>Sidebar Links</h5>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="#">link 1</a></li>
+                            <li class="list-group-item"><a href="#">link 1</a></li>
+                            <li class="list-group-item"><a href="#">link 1</a></li>
+                            <li class="list-group-item"><a href="#">link 1</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="sidebar-widget">
+                        <h5>Widget</h5>
+                    </div>
+                    <p>Minim dolor ex quis proident excepteur nisi aliqua laborum irure commodo veniam non culpa.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+                <p>Copyright <span>your site</span>. All right reserved</p>
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+</body>
+
+</html>
