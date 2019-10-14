@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var array = ["A","B"];
+
+    //perulangan array menggunakan array method
+    array.forEach(function(item, index) {
+        console.log("foreach ke", index + 1, item);       
+    });
+
+    //perulangan array menggunakan while 
+    var i=0;
+    while (i < array.length) {
+        console.log("While ke", i + 1, array[i]);
+        i++;
+    }
+
+    // perulangan array menggunakan for
+    var j;
+    for (j=0; j < array.length; j++){
+        console.log("for ke", j+1, array[j]);
+    }
+
+    // menambahkan item dari BELAKANG pada array
+    array.push("C");
+    console.log(array);
+    // menambahkan item dari
+    array.pop("C");
+    console.log(array);
+</script>
+
+</body>
+</html>

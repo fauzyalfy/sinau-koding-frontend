@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/crud-view.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/tes.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="d-flex justify-content-center align-items-center" style="min-height: 100vh">
+  <div class="container shadow-lg">
+    <button class="button-add" onclick="addRow()">Add</button>
+    <table class="table table-bordered">
+      <thead>
+        <tr class="headingTr">
+          <th>Id</th>
+          <th>Content</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="table-data"></tbody>
+    </table>
+  </div>
+  <script src="js/array-crud.js"></script>
+  <script src="js/array-crud-view-impl.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+
+</body>
+
+</html>

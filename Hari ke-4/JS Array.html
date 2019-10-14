@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+
+        // array kosong
+        var motors = [];
+
+        var motor = {
+            type: "Kawasaki",
+            tahun: 2000,
+            harga: 1000
+        };
+
+        var mobil = {
+            type: "Kwasaki",
+            tahun: 200,
+            harga: 100
+        };
+        
+        // Menambahkan object motor ke motors
+        motors.push(motor);
+        motors.push(mobil);     
+        console.log("Hasil Tambah", JSON.stringify(motors));
+
+        // Find index dari object yang akan kita edit
+        var indexEditMotor = motors.findIndex(function (motor){
+            return motor.tahun == 2000;
+        });
+
+        var editMotor = motors[indexEditMotor];
+        editMotor.type = "Honda";
+
+            console.log("Hasil Find", JSON.stringify(motors));
+
+
+    </script>
+
+</body>
+
+</html>

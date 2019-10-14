@@ -1,0 +1,80 @@
+<html>
+    
+<body>
+
+<p id="demo">Click the button to change the text in this paragraph.</p>
+<p></p>
+<div class="example">Click the button to change the text in this paragraph.</div>
+<div class="example">Click the button to change the text in this paragraph.</div>
+
+
+<div class="demos ">Second div element with class</div><br>
+
+
+ First Name: <input name="fname" type="text" value="F"><br>
+ First Name: <input name="fname" type="text" value="D"><br>
+ First Name: <input name="fname" type="text" value="G"><br>
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+<button>Try it by ID</button>
+<button>Try it by Class Name</button>
+<button>Try it by Name</button>
+<button>Try it by Tag Name</button> 
+<button>Try it by</button> 
+
+<p id="demo4"></p>
+<p id="demo5"></p>
+
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script>
+
+$("button:eq(0)").click(byId);
+$("button:eq(1)").click(byClassName);
+$("button:eq(2)").click(byName);
+$("button:eq(3)").click(byTagName);
+$("button:eq(4)").click(byTagName);
+
+function byId() {
+  // document.getElementById("demo").innerHTML = "LEARNING JS by Id";
+  var demojQuery = $("#demo");
+  demojQuery.html("asdasdasd");
+}
+
+function byClassName() {
+    // var x = document.getElementByClassName("example");
+    // x[0].innerHTML = "LEARNING JS by Id";
+    var demojQuery = $(".example");
+    demojQuery.html("aowaowkdaw");
+}
+
+function byName() {
+  //   var x = document.getElementByName("fname")[2].tagName;
+  // document.getElementById("demo4").innerHTML = x;
+    var demojQuery = $("[name='fname']");
+    demojQuery.val("gwakwkawkkadw");
+}
+
+function byTagName() {
+  //   var x = document.getElementByTagName("LI");
+  // document.getElementById("demo5").innerHTML = x[1].innerHTML;
+    var demojQuery = $("p");
+    demojQuery.html("wiajidwjiadw");
+ }
+
+function myFunction() {
+    var a = document.createElement("h1");
+    var b = document.createTextNode("HELLO WORDS");
+
+    demos.innerHTML = "getElemensByClassName"
+    demos[0].appendChild(a)
+
+}
+
+
+</script>
+</body>
+</html>

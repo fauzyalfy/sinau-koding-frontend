@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<!-- <div id="app"> -->
+<!-- memanggil data yang akan dipanggil -->
+<!-- <h1>{{message}}</h1> -->
+
+<!-- Looping array di Vue.js -->
+<!-- <div v-for="(item, index) in messages"> -->
+<!-- <h1>{item </h1> -->
+<!-- </div> -->
+
+<!-- </div> -->
+
+<head>
+    <title>Instalasi Vue JS</title>
+</head>
+
+<body>
+        <div id="example-1">
+                <!-- INI KOMPONENT -->
+                <button-counter></button-counter>
+                <button-click :count="count" @counting="counting"></button-click>
+                <!-- <button v-on:click="clickCounter()">Klik Gan</button>
+                <p>{{ counter }}</p>
+                <br>
+                <div>{{inputtext }}</div> 
+                <input v-model="inputtext"> -->
+            </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+
+            Vue.component('button-counter',{
+                data: function(){
+                    return{
+                        count:0
+                    }
+                },
+                template: '<button v-on:click="count++"> QWEQWEQWE {{count}} times.</button>'
+            });
+            Vue.component('button-click', {
+                props: ['count'],
+                template: '<button v-on:click="$emit(\'counting\')"> QWEQWE {{count}} times.</button>'
+            });
+
+            var vm = new Vue({
+            // Dimana instance ini 
+            el: "#example-1",
+            // template: "<div>A</div>",
+            // data (message) yang digunakan 
+            data: {
+                count: 0
+                // inputtext: "",
+                // inputCheck:false
+
+            },
+            methods:{
+                counting(){
+                    this.count++;
+                }
+            }
+            // methods: {
+            //     clickCounter() {
+            //         if (this.counter) {
+            //             this.counter = Number(this.counter) + 1;
+            //         } else {
+            //             this.counter = 1;
+            //         }
+            //     }
+            // }
+            // //     message2: ["A", "B", "C"]
+            // },
+            // beforeCreate(){
+            //     console.log("beforeCreate")
+            // }
+            // Created(){
+            //     console.log("afterCreated")
+            // }
+        });
+    </script>
+</body>
+
+</html>

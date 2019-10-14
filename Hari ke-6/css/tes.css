@@ -1,0 +1,111 @@
+        .nav-container {
+            padding: 0 20px;
+            background-color: #c4c4c4;
+        }
+
+        .nav a {
+            color: black;
+        }
+
+        .sidebar-links {
+            padding: 16px;
+        }
+
+        .sidebar-links h5 {
+            margin-bottom: 6px !important;
+        }
+        
+        .col-4 h5 {
+            padding-bottom: 12px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid grey;
+        }
+
+        .sidebar-links h5 {
+            margin-bottom: 24px;
+        }
+
+        .sidebar-links ul li {
+            background-color: transparent;
+            padding-left: 0;
+            border: none;
+        }
+
+        .sidebar-links ul li a {
+            color: orange;
+        }
+
+        .sidebar-widgets {
+            padding: 0 16px 16px;
+        }
+
+        .footer {
+            background-color: black;
+            margin: 0;
+        }
+
+        .footer p {
+            padding: 16px 0;
+            text-align: center;
+            color: white;
+            margin-bottom: 0;
+        }
+
+
+    .sidebar-content2,
+    .main-content2 {
+        padding: 26px;
+        background-color: #cacfd2;
+    }  
+    .champaign-wrp .dott {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+    }
+
+    .sidebar-content2 .list-group .list-group-item {
+        background-color: transparent;
+        margin-bottom: .5rem;
+        padding: .5rem .75rem;
+    }
+
+    thead {
+        background-color: rgb(185, 0, 71);
+        color: whitesmoke !important;
+    }
+
+    .shadow {
+        box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    }
+
+    .container-wrp {
+        margin: 0 -15px;
+    }
+
+    .material-icons.md-18 {
+        font-size: 18px;
+    }
+
+    .material-icons.md-24 {
+        font-size: 24px;
+    }
+
+    .material-icons.md-36 {
+        font-size: 36px;
+    }
+
+    .material-icons.md-48 {
+        font-size: 48px;
+    }
+
+    .material-icons.md-96 {
+        font-size: 96px;
+    }
+
+    .material-icons.md-dark {
+        color:rgb(185, 0, 71) !important;
+    }
+
+    .material-icons.md-dark.md-inactive {
+            color: rgba(0, 0, 0, 0.26);
+        }
